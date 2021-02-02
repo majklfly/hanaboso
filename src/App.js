@@ -1,23 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+
+import { TasksContainer } from "./containers/TasksContainer";
+import { AddTaskContainer } from "./containers/AddTaskContainer";
+
+import { Background } from "./components/Background";
 
 function App() {
+  // main application component containing containers of the app
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Background />
+      <AddTaskContainer />
+      <TasksContainer />
     </div>
   );
 }
