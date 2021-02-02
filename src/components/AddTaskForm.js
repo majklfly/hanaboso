@@ -34,12 +34,10 @@ export const AddTaskForm = () => {
     dispatch(addTask({ id: date, data: input }));
     setInput("");
   };
-
-  console.log("input", input);
   return (
     <Form>
       <Field
-        label="Please insert a new task"
+        label="Type here"
         onChange={(e) => setInput(e.target.value)}
         value={input}
       />
